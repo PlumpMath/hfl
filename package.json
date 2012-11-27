@@ -1,0 +1,32 @@
+{
+  "name": "hfl",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Hollywood Fantasy League",
+  "main": "index.js",
+  "scripts": {
+    "build": "cake build",
+    "start": "cd lib && node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/discordinoffice/hfl.git"
+  },
+  "keywords": [
+    "fantasy",
+    "hollywood",
+    "league"
+  ],
+  "dependencies": {
+    "express": "3.x",
+    "hogan-express": "0.3.x",
+    "i18n": "*",
+    "less-middleware": "0.1.x"
+  },
+  "devDependencies": {
+    "coffee-script": "1.4.x"
+  },
+  "author": "Colin Teal <the30yearswar@hotmail.com>",
+  "license": "MIT"
+}
