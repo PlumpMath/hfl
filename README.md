@@ -1,2 +1,1 @@
-Hollywood Fantasy League
-*For one to n players*
+**Hollywood Fantasy League**: *For one to n players*
