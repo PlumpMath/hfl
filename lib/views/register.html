@@ -1,0 +1,43 @@
+<div class="page-header">
+    <h1>{{#__i}}Register{{/__i}}</h1>
+</div>
+<div class="row">
+    <div class="span6">
+        <div class="alert alert-error" style="display: none;">
+            <strong>{{#__i}}Danger Will Robinson!{{/__i}}</strong>&nbsp;{{#__i}}Something isn't right down there.{{/__i}}
+        </div>
+        <form id="register">
+            <div class="control-group">
+                <label class="control-label" for="username">{{#__i}}Username{{/__i}}</label>
+                <div class="controls">
+                    <input type="text" class="span6" id="username" placeholder="{{#__i}}username{{/__i}}" />
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="email">{{#__i}}Email{{/__i}}</label>
+                <div class="controls">
+                    <input type="text" class="span6" id="email" placeholder="{{#__i}}email{{/__i}}" />
+                    <span class="help-block">{{#__i}}We will guard this with our life.{{/__i}}</span>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="password">{{#__i}}Password{{/__i}}</label>
+                <div class="controls">
+                    <input type="password" class="span6" id="password" />
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="confirmation">{{#__i}}Confirm Password{{/__i}}</label>
+                <div class="controls">
+                    <input type="password" class="span6" id="confirmation" />
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <input type="button" class="btn btn-primary" value="{{#__i}}Register{{/__i}}" />
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="span6"></div>
+</div>

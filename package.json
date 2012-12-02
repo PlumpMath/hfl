@@ -7,7 +7,7 @@
   "scripts": {
     "build": "cake build",
     "start": "cd lib && node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha $(find test -name \"*.coffee\") --reporter spec --compilers cofee:coffee-script"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,8 @@
     "less-middleware": "0.1.x"
   },
   "devDependencies": {
-    "coffee-script": "1.4.x"
+    "coffee-script": "1.4.x",
+    "mocha": "1.7.x"
   },
   "author": "Colin Teal <the30yearswar@hotmail.com>",
   "license": "MIT"

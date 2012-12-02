@@ -2,6 +2,7 @@ http = require "http"
 path = require "path"
 express = require "express"
 i18n = require "i18n"
+routes = require "./routes"
 
 app = express();
 
@@ -24,8 +25,8 @@ app.configure () ->
 
 app.configure "development", () -> app.use express.errorHandler()
 
-app.get "/", (req, res) ->
-    res.render "index"
+app.get "/", routes.index
+app.get "/register", routes.register
 
 http.createServer(app).listen app.get("port"), () ->
     console.log "Express server listening on port #{ app.get('port') }"
